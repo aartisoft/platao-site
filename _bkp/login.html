@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  <meta name="theme-color" content="#fff">
+
+  <title>Login - Nextpost</title>
+  <meta name="description" content="Nextpost - Auto Post, Schedule &amp; Manage your Instagram Multi Account">
+  <meta name="keywords" content="nextpost, instagram, auto post, schedule, multiple accounts, social media">
+
+  <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="assets/css/fonts-v=1.0.css">
+  <link rel="stylesheet" href="assets/css/vendor-v=1.0.css">
+  <link rel="stylesheet" href="assets/css/core-v=1.0.css">
+
+  <script src="assets/js/vendor-v=1.0.js"></script>
+</head>
+
+<body class="alternatebg">
+  <div class="signinarea">
+    <div class="inner">
+      <a class="logo" href="https://skins.getnextpost.io/uranus/html">
+        <img src="assets/img/logo.svg" alt="Nextpost">
+      </a>
+
+      <h1 class="title">Sign in to your account</h1>
+      <div class="box">
+        <div class="m-bottom-20">
+          <a class="fbloginbtn" href="javascript:void(0)">
+            <span class="icon fab fa-facebook-square"></span>Login with Facebook
+          </a>
+        </div>
+
+        <form action="./login.html" method="POST" autocomplete="off">
+          <input type="hidden" name="action" value="login">
+
+          <div class="m-bottom-20">
+            <input class="input" type="text" name="username" placeholder="E-mail adress" value="">
+          </div>
+
+          <div class="m-bottom-20">
+            <input class="input" type="password" name="password" placeholder="Password">
+          </div>
+
+          <input type="submit" class="fluid button" value="Sign in">
+
+          <div class="actions flex flex-between flex-middle">
+            <label>
+              <input type="checkbox" class="checkbox" name="remember" value="1"  />
+              <div>
+                <span class="icon unchecked far fa-square"></span>
+                <span class="icon checked fas fa-check-square"></span>
+                Remember me 
+              </div>
+            </label>
+
+            <div class="forgot_pass">
+              <a href="recovery.html">Forgot Password?</a>
+            </div>
+          </div>    
+        </form> 
+      </div>
+
+      <div class="bottom_text">Need an account? <a href="signup.html">Sign up</a></div>
+    </div>
+  </div>
+
+  <script src="assets/js/core-v=1.0.js"></script>
+  <script>
+    $(function() {
+      uranus.fblogin('1755424591423541', './login.html');
+    });
+  </script>
+</body>
+</html>
