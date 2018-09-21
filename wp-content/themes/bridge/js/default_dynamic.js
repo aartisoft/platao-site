@@ -30,8 +30,8 @@ var add_for_admin_bar = 0;
 
 var logo_height = 130; // proya logo height
 var logo_width = 280; // proya logo width
-	logo_height = 185;
-	logo_width = 500;
+	logo_height = 331;
+	logo_width = 1139;
 	
 	header_top_height = 0;
 var loading_text;
@@ -41,7 +41,7 @@ finished_text = 'No more posts';
 
 var piechartcolor;
 piechartcolor	= "#1abc9c";
-	piechartcolor = "#34cfee";
+	piechartcolor = "#ffaa00";
 
 var geocoder;
 var map;
